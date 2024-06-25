@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(15px + 0.3vw);
     margin: 0;
     padding: 0;
     height: 100%;
@@ -10,9 +11,12 @@ body {
 
 header {
     font-style: italic;
-    font-size: 2em;
     margin: 0 2.5%;
     border-bottom: 10px solid pink;
+}
+
+header h1 {
+    font-size: calc(24px + 1.75vw);
 }
 
 main img {
@@ -20,6 +24,15 @@ main img {
     border-width: 4px;
     border-style: solid;
     border-radius: 10px;
+
+    min-height: 11em;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+main h2 {
+    margin-top: 8vh;
 }
 
 .center {
@@ -28,24 +41,14 @@ main img {
     margin-right: auto;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
-    width: 50%;
+    height: 24vw;
 }
 
-header p {
-    font-size: 1em;
-}
 
 main {
     margin: 10px 2.5%;
 }
 
-main p {
-    font-size: 1.25em;
-}
-
-main h2 {
-    font-size: 2em;
-}
 
 /* unvisited link */
 a:link {
@@ -84,7 +87,8 @@ a:active {
 }
 
 .image-list ul .large {
-    height: 24em;
+    height: 18vw;
+    min-height: 11em;
 }
 
 .image-list div {
@@ -99,13 +103,10 @@ a:active {
 
 .image-list .content {
     left: 25%;
-    margin: 1% 1% 10px;
-    /* width: 50%; */
+    margin: 1% 1% 8vh;
+    max-width: 50em;
 }
 
-.image-list .content p {
-    font-size: 1.1em;
-}
 
 .image-list .date {
     margin: 0;
@@ -114,7 +115,6 @@ a:active {
 
 .image-list .image-header {
     margin: 0 0 2px;
-    font-size: 2em;
 }
 
 .image-list img {
