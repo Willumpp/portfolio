@@ -38,6 +38,7 @@
         
         <h2>Nodes</h2>
         <p>Similar to animating, the interface consists of a timeline, keyframes, and transitions between. There are also a few different types of keyframes to use. Simply click a node to change its colour properties. When a node is selected, you can click on the colour wheel or change the individual RGB values to edit the node's colour properties.</p>
+        <p>Hit <b>spacebar</b> to restart the animation. This will move the timeline bar to the start of the animation. The bar will then progress through the animation triggering any nodes it hits. The priority of the nodes in the same column is top node is triggered first, whereas bottom is last. For example, imagine a context where a fill node was placed at the top and a single pixel node at the bottom of the same column. When the timeline bar hits both at the same time, the strip will be filled then a single pixel will be placed.</p>
         <div class="image-list">
             <ul>
                 <li class="large">
@@ -69,8 +70,20 @@
                         <p>When first placing this you choose the number of gradient "nodes" you would like. After inputing a number, re-select the gradient node. This will display the <b>Pixel Index</b> of each sub-node. This is used to change the position of the gradient sub-nodes. You can click the white rectangles on the preview to change the colour of that position. As a result, a gradient will form.</p>
                     </div>
                 </li>
+
+                <li class="large">
+                    <div class="image">
+                        <img src="./gradient.png">
+                    </div>
+                    <div class="content">
+                        <h2>Start node (<b>F4</b>) and Terminate node (<b>F5</b>)</h2>
+                        <p>Place a Start node where the animation should start and the Terminate node where the animation should repeat. A terminate node will cause the animation to loop forever, ending each loop when the timeline bar hits the node. The bar will reset at the position of the start node.</p>
+                    </div>
+                </li>
             </ul>
         </div>
+        <p>Each node can be selected for placement using the pressed "F-Key" and placed using <b>left-click</b>. When selecting a node for placement, the node will snap to a grid on the timeline. Wheen a node is placed, it can be selected for editing using <b>left-click</b>. In the appeared menu, most relevant properties of the node can be edited.</p>
+        <p>With a selected node, holding <b>shift</b> and left clicking another node <i>on the same row of the same node type</i> will result in a <b>transition</b> being created (This is represented by a bar connecting the two nodes). The transition can be selected using <b>left-click</b>. Here you can edit the properties of the transition for each variable between the nodes. When the timeline bar passes through the transition, an interpolation between the two variables of each node will be represented on the strip. For example, a transition between two fill nodes will result in a smoot colour transition on the strip.</p>
 
 
     </main>
